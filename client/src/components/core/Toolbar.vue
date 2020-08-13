@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar id="core-toolbar" color="transparent" flat height="200">
+  <v-toolbar id="core-toolbar" color="#00000029" flat height="100">
     <v-toolbar-title class="display-1 font-weight-black d-inline-flex px-0 px-md-8 align-center">
       <router-link :class="$route.name !== 'home' ? 'primary--text' : 'white--text'" to="/">
         <v-avatar class="mr-3" size="250" tile>
@@ -15,7 +15,7 @@
     </v-toolbar-title>
 
     <v-spacer />
-
+    <!-- 
     <v-btn
       :dark="$vuetify.breakpoint.smAndDown"
       :icon="$vuetify.breakpoint.smAndDown"
@@ -27,9 +27,9 @@
       <span v-if="$vuetify.breakpoint.mdAndUp">About</span>
 
       <v-icon v-else>mdi-information</v-icon>
-    </v-btn>
+    </v-btn>-->
 
-    <v-btn
+    <!-- <v-btn
       :dark="$vuetify.breakpoint.smAndDown"
       :icon="$vuetify.breakpoint.smAndDown"
       class="mr-3"
@@ -40,7 +40,7 @@
       <span v-if="$vuetify.breakpoint.mdAndUp">Our Works</span>
 
       <v-icon v-else>mdi-file</v-icon>
-    </v-btn>
+    </v-btn>-->
 
     <base-btn
       :color="$vuetify.breakpoint.mdAndUp ? 'primary' : 'white'"
@@ -64,8 +64,12 @@ export default {
 };
 </script>
 
-<style lang="sass">
-#core-toolbar
-  a
-    text-decoration: none
+<style lang="scss">
+.theme--light.v-application {
+  background: #59d9ff;
+}
+
+.core-toolbar > .a {
+  text-decoration: none;
+}
 </style>

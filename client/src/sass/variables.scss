@@ -1,5 +1,16 @@
 // src/sass/variables.scss
 
+$font-path: "/fonts" !default;
+
+@font-face {
+  font-family: "audiowideregular";
+  src: url("#{$font-path}/audiowide/audiowide-regular-webfont.woff2")
+      format("woff2"),
+    url("#{$font-path}/audiowide/audiowide-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 $btn-border-radius: 10px;
 $sheet-border-radius: 17px;
 $card-border-radius: 17px;

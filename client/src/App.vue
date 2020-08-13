@@ -17,16 +17,16 @@
 </template>
 
 <script>
-  export default {
-    name: 'App',
+export default {
+  name: "App",
 
-    components: {
-      CoreFooter: () => import('@/components/core/Footer'),
-      CoreLeftBlob: () => import('@/components/core/LeftBlob'),
-      CoreRightBlob: () => import('@/components/core/RightBlob'),
-      CoreToolbar: () => import('@/components/core/Toolbar'),
-      CoreTopBlob: () => import('@/components/core/TopBlob'),
-      CoreView: () => import('@/components/core/View'),
-    },
+  components: {
+    CoreFooter: () => import("@/components/core/Footer"),
+    CoreLeftBlob: () => import("@/components/core/LeftBlob"),
+    CoreRightBlob: () => import("@/components/core/RightBlob"),
+    CoreToolbar: () => import("@/components/core/Toolbar"),
+    CoreTopBlob: () => import("@/components/core/TopBlob"),
+    CoreView: () => import("@/components/core/View")
   }
+};
 </script>

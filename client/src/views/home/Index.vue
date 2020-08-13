@@ -6,36 +6,36 @@
 
     <features />
 
-    <stack v-if="$vuetify.breakpoint.smAndUp" />
+    <!-- <stack v-if="$vuetify.breakpoint.smAndUp" /> -->
 
-    <guarantees />
+    <!-- <guarantees />
 
-    <market />
+    <market /> -->
 
-    <stay-informed />
+    <!-- <stay-informed /> -->
   </section>
 </template>
 
 <script>
-  export default {
-    name: 'Home',
+export default {
+  name: "Home",
 
-    components: {
-      Hero: () => import('./Hero'),
-      Features: () => import('./Features'),
-      VVideo: () => import('./Video'),
-      Market: () => import('./Market'),
-      Stack: () => import('./Stack'),
-      Guarantees: () => import('./Guarantees'),
-      StayInformed: () => import('./StayInformed'),
-    },
+  components: {
+    Hero: () => import("./Hero"),
+    Features: () => import("./Features"),
+    VVideo: () => import("./Video"),
+    Market: () => import("./Market"),
+    Stack: () => import("./Stack"),
+    Guarantees: () => import("./Guarantees"),
+    StayInformed: () => import("./StayInformed")
   }
+};
 </script>
 
 <style lang="sass">
-  #home section
-    padding: 32px 16px 96px
+#home section
+  padding: 32px 16px 96px
 
-    @media screen and (max-width: 360px)
-      padding: 32px 16px
+  @media screen and (max-width: 360px)
+    padding: 32px 16px
 </style>

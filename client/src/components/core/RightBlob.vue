@@ -3,12 +3,12 @@
     :src="require('@/assets/art/blob-right-side.png')"
     class="hidden-sm-and-down"
     height="500"
-    style="position: absolute; top: 425vh; right: 0;"
-  >
+    style="position: absolute; top: 330vh; right: 0;"
+  />
 </template>
 
 <script>
-  export default {
-    name: 'CoreRightBlob',
-  }
+export default {
+  name: "CoreRightBlob"
+};
 </script>

@@ -7,23 +7,20 @@
   >
     <base-subheading
       class="mb-12"
-      subtitle="Get the latest information about CRYPTO Coin"
+      subtitle="Subscribe to our newsletter and stay up to date on technology"
       title="Stay Informed"
     />
 
-    <subscribe
-      class="mx-auto"
-      max-width="700"
-    />
+    <subscribe class="mx-auto" max-width="700" />
   </v-container>
 </template>
 
 <script>
-  export default {
-    name: 'HomeStayInformed',
+export default {
+  name: "HomeStayInformed",
 
-    components: {
-      Subscribe: () => import('@/components/Subscribe'),
-    },
+  components: {
+    Subscribe: () => import("@/components/Subscribe")
   }
+};
 </script>
